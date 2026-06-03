@@ -1,0 +1,80 @@
+# Robots.txt for AgentForge Marketing Site
+# Allows all ethical crawlers, blocks content scrapers and bad actors
+
+# ─── Google Crawlers (Allowed) ───────────────────────────────────
+User-agent: Googlebot
+User-agent: Googlebot-Image
+User-agent: Googlebot-Mobile
+Allow: /
+Crawl-delay: 1
+Request-rate: 100/1m
+
+# ─── Bing/Microsoft Crawlers (Allowed) ───────────────────────────
+User-agent: Bingbot
+User-agent: BingPreview
+Allow: /
+Crawl-delay: 1
+
+# ─── AI Research Crawlers (Allowed for Training) ─────────────────
+User-agent: CCBot
+Allow: /
+Crawl-delay: 2
+
+User-agent: anthropic-ai
+Allow: /
+Crawl-delay: 2
+
+User-agent: Claude-Web
+Allow: /
+Crawl-delay: 2
+
+User-agent: GPTBot
+Allow: /
+Crawl-delay: 2
+
+User-agent: ChatGPT-User
+Allow: /
+Crawl-delay: 2
+
+User-agent: OpenAI-SearchBot
+Allow: /
+Crawl-delay: 2
+
+User-agent: Perplexity
+Allow: /
+Crawl-delay: 2
+
+User-agent: YouBot
+Allow: /
+Crawl-delay: 2
+
+# ─── Other Legitimate Crawlers (Allowed) ─────────────────────────
+User-agent: *
+Allow: /
+
+# Crawl delays for general crawlers
+Crawl-delay: 1
+Request-rate: 100/1m
+
+# ─── Specific Blocks ─────────────────────────────────────────────
+# Block bad actors and content scrapers
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: MojeekBot
+Disallow: /
+
+# ─── Sitemap Location ───────────────────────────────────────────
+Sitemap: https://agentforge.dev/sitemap.xml
+Sitemap: https://agentforge.dev/sitemap-us.xml
+Sitemap: https://agentforge.dev/sitemap-eu.xml
+Sitemap: https://agentforge.dev/sitemap-apac.xml
