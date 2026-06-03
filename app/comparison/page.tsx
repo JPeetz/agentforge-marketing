@@ -38,7 +38,7 @@ export default function ComparisonPage() {
               </tr>
             </thead>
             <tbody>
-              <tr className="border-b border-blue-500/10 hover:bg-blue-500/5">
+              <tr className="border-b border-blue-500/10 hover:bg-blue-500/10">
                 <td className="py-4 px-4 font-semibold text-blue-300">Security Model</td>
                 <td className="text-center py-4 px-4"><span className="bg-green-500/20 text-green-300 px-3 py-1 rounded-full text-sm font-bold">Capability-Based</span></td>
                 <td className="text-center py-4 px-4"><span className="bg-red-500/20 text-red-300 px-3 py-1 rounded-full text-sm font-bold">Full Host Access</span></td>
