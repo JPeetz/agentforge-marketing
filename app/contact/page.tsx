@@ -26,19 +26,37 @@ export default function ContactPage() {
     }))
   }
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
-    console.log('Form submitted:', formData)
-    setSubmitted(true)
-    setTimeout(() => setSubmitted(false), 5000)
+    try {
+      // Send to contact email
+      const response = await fetch('https://formspree.io/f/xyzabc123', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          company: formData.company,
+          message: formData.message,
+          _to: 'j.peetz@outlook.ie',
+        }),
+      })
+      if (response.ok) {
+        setSubmitted(true)
+        setFormData({ name: '', email: '', company: '', message: '' })
+        setTimeout(() => setSubmitted(false), 5000)
+      }
+    } catch (error) {
+      console.error('Form submission error:', error)
+    }
   }
 
   return (
     <div>
-      <section className="py-20 bg-gradient-to-b from-blue-50 to-white">
+      <section className="py-20 border-b border-blue-500/10">
         <div className="container text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">Get in Touch</h1>
-          <p className="text-lg text-gray-700 max-w-2xl mx-auto">
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 gradient-text">Get in Touch</h1>
+          <p className="text-lg text-gray-300 max-w-2xl mx-auto">
             Questions about AgentForge? We'd love to hear from you.
           </p>
         </div>
@@ -116,7 +134,7 @@ export default function ContactPage() {
             <div className="glassmorphism p-6 rounded-lg border border-blue-500/20 text-center">
               <h3 className="font-bold mb-2 text-blue-300">GitHub</h3>
               <p className="text-gray-400 mb-4 text-sm">Code, issues, and discussions</p>
-              <a href="https://github.com/agentforge/agentforge" className="text-blue-400 font-bold hover:text-blue-300">
+              <a href="https://github.com/JPeetz/agentforge" className="text-blue-400 font-bold hover:text-blue-300">
                 View on GitHub →
               </a>
             </div>

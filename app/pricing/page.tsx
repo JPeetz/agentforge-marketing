@@ -29,7 +29,7 @@ export default function PricingPage() {
                 <li className="flex gap-2"><span className="text-green-400">✓</span> Memory with Git</li>
                 <li className="flex gap-2"><span className="text-green-400">✓</span> Self-hosted</li>
               </ul>
-              <a href="https://github.com/agentforge/agentforge" className="glassmorphism text-blue-300 px-6 py-2 rounded font-bold hover:text-blue-100 border border-blue-500/30 block transition">
+              <a href="https://github.com/JPeetz/agentforge" className="glassmorphism text-blue-300 px-6 py-2 rounded font-bold hover:text-blue-100 border border-blue-500/30 block transition">
                 Get Started
               </a>
             </div>
@@ -141,7 +141,7 @@ export default function PricingPage() {
             Free open source. Managed service available. Enterprise support for large deployments.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="https://github.com/agentforge/agentforge" className="glassmorphism text-blue-300 px-8 py-3 rounded-lg font-bold hover:text-blue-100 border border-blue-500/30 transition">
+            <a href="https://github.com/JPeetz/agentforge" className="glassmorphism text-blue-300 px-8 py-3 rounded-lg font-bold hover:text-blue-100 border border-blue-500/30 transition">
               Download Free
             </a>
             <a href="/contact" className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-3 rounded-lg font-bold hover:from-blue-700 hover:to-purple-700 transition">

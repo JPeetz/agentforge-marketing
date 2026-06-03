@@ -6,35 +6,35 @@ export const metadata = {
 export default function ComparisonPage() {
   return (
     <div>
-      <section className="py-20 bg-gradient-to-b from-blue-50 to-white">
+      <section className="py-20 border-b border-blue-500/10">
         <div className="container text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">How AgentForge Compares</h1>
-          <p className="text-lg text-gray-700 max-w-2xl mx-auto">
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 gradient-text">How AgentForge Compares</h1>
+          <p className="text-lg text-gray-300 max-w-2xl mx-auto">
             Built for security and scale, from the ground up.
           </p>
         </div>
       </section>
 
-      <section className="py-20 bg-white overflow-x-auto">
+      <section className="py-20 overflow-x-auto">
         <div className="container">
           <table className="w-full border-collapse min-w-max">
             <thead>
-              <tr className="border-b-2 border-gray-300 bg-gray-50">
-                <th className="text-left py-4 px-4 font-bold text-gray-900">Feature</th>
-                <th className="text-center py-4 px-4 font-bold text-brand">AgentForge</th>
-                <th className="text-center py-4 px-4 font-bold text-gray-600">OpenClaw</th>
-                <th className="text-center py-4 px-4 font-bold text-gray-600">Hermes</th>
+              <tr className="border-b-2 border-blue-500/20 bg-blue-500/5">
+                <th className="text-left py-4 px-4 font-bold text-blue-300">Feature</th>
+                <th className="text-center py-4 px-4 font-bold text-blue-300">AgentForge</th>
+                <th className="text-center py-4 px-4 font-bold text-gray-400">OpenClaw</th>
+                <th className="text-center py-4 px-4 font-bold text-gray-400">Hermes</th>
               </tr>
             </thead>
             <tbody>
-              <tr className="border-b border-gray-200 hover:bg-gray-50">
-                <td className="py-4 px-4 font-semibold text-gray-900">Security Model</td>
-                <td className="text-center py-4 px-4"><span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-bold">Capability-Based</span></td>
-                <td className="text-center py-4 px-4"><span className="bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm font-bold">Full Host Access</span></td>
-                <td className="text-center py-4 px-4"><span className="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm font-bold">Trust-Based</span></td>
+              <tr className="border-b border-blue-500/10 hover:bg-blue-500/5">
+                <td className="py-4 px-4 font-semibold text-blue-300">Security Model</td>
+                <td className="text-center py-4 px-4"><span className="bg-green-500/20 text-green-300 px-3 py-1 rounded-full text-sm font-bold">Capability-Based</span></td>
+                <td className="text-center py-4 px-4"><span className="bg-red-500/20 text-red-300 px-3 py-1 rounded-full text-sm font-bold">Full Host Access</span></td>
+                <td className="text-center py-4 px-4"><span className="bg-yellow-500/20 text-yellow-300 px-3 py-1 rounded-full text-sm font-bold">Trust-Based</span></td>
               </tr>
-              <tr className="border-b border-gray-200 hover:bg-gray-50">
-                <td className="py-4 px-4 font-semibold text-gray-900">Filesystem ACLs</td>
+              <tr className="border-b border-blue-500/10 hover:bg-blue-500/5">
+                <td className="py-4 px-4 font-semibold text-blue-300">Filesystem ACLs</td>
                 <td className="text-center py-4 px-4">✓ Glob patterns</td>
                 <td className="text-center py-4 px-4">✗ Full access</td>
                 <td className="text-center py-4 px-4">✗</td>
@@ -140,13 +140,13 @@ export default function ComparisonPage() {
         </div>
       </section>
 
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 border-t border-blue-500/10">
         <div className="container">
-          <h2 className="text-3xl font-bold mb-12">Why AgentForge?</h2>
+          <h2 className="text-3xl font-bold mb-12 gradient-text">Why AgentForge?</h2>
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-white p-8 rounded-lg border border-gray-200">
-              <h3 className="text-xl font-bold mb-4 text-brand">For Security Teams</h3>
-              <ul className="space-y-2 text-gray-700">
+            <div className="glassmorphism p-8 rounded-lg border border-blue-500/20">
+              <h3 className="text-xl font-bold mb-4 text-blue-300">For Security Teams</h3>
+              <ul className="space-y-2 text-gray-300">
                 <li>✓ Zero-trust by design</li>
                 <li>✓ Fine-grained ACLs</li>
                 <li>✓ Complete audit trail</li>
@@ -154,9 +154,9 @@ export default function ComparisonPage() {
                 <li>✓ Compliance-friendly</li>
               </ul>
             </div>
-            <div className="bg-white p-8 rounded-lg border border-gray-200">
-              <h3 className="text-xl font-bold mb-4 text-brand">For DevOps Teams</h3>
-              <ul className="space-y-2 text-gray-700">
+            <div className="glassmorphism p-8 rounded-lg border border-blue-500/20">
+              <h3 className="text-xl font-bold mb-4 text-blue-300">For DevOps Teams</h3>
+              <ul className="space-y-2 text-gray-300">
                 <li>✓ 10MB single binary</li>
                 <li>✓ Minimal dependencies</li>
                 <li>✓ Fast startup (&lt;100ms)</li>
@@ -164,9 +164,9 @@ export default function ComparisonPage() {
                 <li>✓ Prometheus metrics</li>
               </ul>
             </div>
-            <div className="bg-white p-8 rounded-lg border border-gray-200">
-              <h3 className="text-xl font-bold mb-4 text-brand">For AI Engineers</h3>
-              <ul className="space-y-2 text-gray-700">
+            <div className="glassmorphism p-8 rounded-lg border border-blue-500/20">
+              <h3 className="text-xl font-bold mb-4 text-blue-300">For AI Engineers</h3>
+              <ul className="space-y-2 text-gray-300">
                 <li>✓ 19 powerful tools</li>
                 <li>✓ Persistent memory with Git</li>
                 <li>✓ Real-time cost tracking</li>
@@ -174,9 +174,9 @@ export default function ComparisonPage() {
                 <li>✓ Modern dashboard</li>
               </ul>
             </div>
-            <div className="bg-white p-8 rounded-lg border border-gray-200">
-              <h3 className="text-xl font-bold mb-4 text-brand">For Enterprises</h3>
-              <ul className="space-y-2 text-gray-700">
+            <div className="glassmorphism p-8 rounded-lg border border-blue-500/20">
+              <h3 className="text-xl font-bold mb-4 text-blue-300">For Enterprises</h3>
+              <ul className="space-y-2 text-gray-300">
                 <li>✓ Open source (Apache 2.0)</li>
                 <li>✓ Self-hosted</li>
                 <li>✓ No vendor lock-in</li>
@@ -188,17 +188,17 @@ export default function ComparisonPage() {
         </div>
       </section>
 
-      <section className="py-20 bg-white">
+      <section className="py-20 border-t border-blue-500/10">
         <div className="container text-center">
-          <h2 className="text-3xl font-bold mb-6">Ready to Switch?</h2>
-          <p className="text-lg text-gray-700 mb-8 max-w-2xl mx-auto">
+          <h2 className="text-3xl font-bold mb-6 gradient-text">Ready to Switch?</h2>
+          <p className="text-lg text-gray-300 mb-8 max-w-2xl mx-auto">
             AgentForge is open source. Get started today with zero vendor lock-in.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="https://github.com/agentforge/agentforge" className="bg-brand text-white px-8 py-3 rounded-lg font-bold hover:bg-blue-700">
+            <a href="https://github.com/JPeetz/agentforge" className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-3 rounded-lg font-bold hover:from-blue-700 hover:to-purple-700 transition">
               View on GitHub
             </a>
-            <a href="/docs" className="border-2 border-brand text-brand px-8 py-3 rounded-lg font-bold hover:bg-blue-50">
+            <a href="/docs" className="glassmorphism border border-blue-500/30 text-blue-300 px-8 py-3 rounded-lg font-bold hover:border-blue-500/60 transition">
               Read Docs
             </a>
           </div>

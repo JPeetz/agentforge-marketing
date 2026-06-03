@@ -69,7 +69,7 @@ export default function RootLayout({
               <a href="/blog" className="text-gray-300 hover:text-blue-400 font-medium text-sm">Blog</a>
             </nav>
             <div className="flex gap-4">
-              <a href="https://github.com/agentforge/agentforge" className="hidden sm:inline text-gray-300 hover:text-blue-400 font-medium text-sm">GitHub</a>
+              <a href="https://github.com/JPeetz/agentforge" className="hidden sm:inline text-gray-300 hover:text-blue-400 font-medium text-sm">GitHub</a>
               <a href="/contact" className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-4 py-2 rounded-lg font-medium hover:from-blue-700 hover:to-purple-700 transition">Get Started</a>
             </div>
           </div>
@@ -100,7 +100,7 @@ export default function RootLayout({
                 <ul className="space-y-2 text-sm text-gray-400">
                   <li><a href="/docs" className="hover:text-blue-400">Documentation</a></li>
                   <li><a href="/blog" className="hover:text-blue-400">Blog</a></li>
-                  <li><a href="https://github.com/agentforge/agentforge" className="hover:text-blue-400">GitHub</a></li>
+                  <li><a href="https://github.com/JPeetz/agentforge" className="hover:text-blue-400">GitHub</a></li>
                   <li><a href="https://discord.gg/agentforge" className="hover:text-blue-400">Discord</a></li>
                 </ul>
               </div>
@@ -116,7 +116,7 @@ export default function RootLayout({
             <div className="border-t border-blue-500/10 pt-8 flex items-center justify-between text-sm text-gray-500">
               <p>&copy; 2026 AgentForge. All rights reserved.</p>
               <div className="flex gap-6">
-                <a href="https://github.com/agentforge/agentforge" className="hover:text-blue-400">GitHub</a>
+                <a href="https://github.com/JPeetz/agentforge" className="hover:text-blue-400">GitHub</a>
                 <a href="https://discord.gg/agentforge" className="hover:text-blue-400">Discord</a>
               </div>
             </div>

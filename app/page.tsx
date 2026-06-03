@@ -30,7 +30,7 @@ export default function HomePage() {
               <a href="/contact" className="group glassmorphism bg-gradient-to-r from-blue-600/80 to-purple-600/80 text-white px-8 py-3 rounded-lg font-bold hover:from-blue-600 hover:to-purple-600 border border-blue-400/50 flex items-center justify-center gap-2 transition">
                 Get Started <ArrowRight size={20} className="group-hover:translate-x-1 transition" />
               </a>
-              <a href="https://github.com/agentforge/agentforge" className="glassmorphism text-blue-300 px-8 py-3 rounded-lg font-bold hover:text-blue-100 border border-blue-500/30 hover:border-blue-500/50 transition">
+              <a href="https://github.com/JPeetz/agentforge" className="glassmorphism text-blue-300 px-8 py-3 rounded-lg font-bold hover:text-blue-100 border border-blue-500/30 hover:border-blue-500/50 transition">
                 View on GitHub
               </a>
             </div>
@@ -192,7 +192,7 @@ export default function HomePage() {
             Open source, self-hosted, or managed. Choose your deployment model.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="https://github.com/agentforge/agentforge" className="glassmorphism text-blue-300 px-8 py-3 rounded-lg font-bold hover:text-blue-100 border border-blue-500/30 hover:border-blue-500/50 transition">
+            <a href="https://github.com/JPeetz/agentforge" className="glassmorphism text-blue-300 px-8 py-3 rounded-lg font-bold hover:text-blue-100 border border-blue-500/30 hover:border-blue-500/50 transition">
               Download Free
             </a>
             <a href="/docs" className="glassmorphism bg-gradient-to-r from-blue-600/80 to-purple-600/80 text-white px-8 py-3 rounded-lg font-bold hover:from-blue-600 hover:to-purple-600 border border-blue-400/50 transition">
