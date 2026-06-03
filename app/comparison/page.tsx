@@ -44,107 +44,107 @@ export default function ComparisonPage() {
                 <td className="text-center py-4 px-4"><span className="bg-red-500/20 text-red-300 px-3 py-1 rounded-full text-sm font-bold">Full Host Access</span></td>
                 <td className="text-center py-4 px-4"><span className="bg-yellow-500/20 text-yellow-300 px-3 py-1 rounded-full text-sm font-bold">Trust-Based</span></td>
               </tr>
-              <tr className="border-b border-blue-500/10 hover:bg-blue-500/5">
+              <tr className="border-b border-blue-500/10 hover:bg-blue-500/10">
                 <td className="py-4 px-4 font-semibold text-blue-300">Filesystem ACLs</td>
-                <td className="text-center py-4 px-4">✓ Glob patterns</td>
-                <td className="text-center py-4 px-4">✗ Full access</td>
-                <td className="text-center py-4 px-4">✗</td>
+                <td className="text-center py-4 px-4 text-gray-300">✓ Glob patterns</td>
+                <td className="text-center py-4 px-4 text-gray-300">✗ Full access</td>
+                <td className="text-center py-4 px-4 text-gray-300">✗</td>
               </tr>
-              <tr className="border-b border-gray-200 hover:bg-gray-50">
-                <td className="py-4 px-4 font-semibold text-gray-900">Domain Whitelist</td>
-                <td className="text-center py-4 px-4">✓ Per-agent</td>
-                <td className="text-center py-4 px-4">✗</td>
-                <td className="text-center py-4 px-4">✗</td>
+              <tr className="border-b border-blue-500/10 hover:bg-blue-500/10">
+                <td className="py-4 px-4 font-semibold text-blue-300">Domain Whitelist</td>
+                <td className="text-center py-4 px-4 text-gray-300">✓ Per-agent</td>
+                <td className="text-center py-4 px-4 text-gray-300">✗</td>
+                <td className="text-center py-4 px-4 text-gray-300">✗</td>
               </tr>
-              <tr className="border-b border-gray-200 hover:bg-gray-50">
-                <td className="py-4 px-4 font-semibold text-gray-900">Token Budget Control</td>
+              <tr className="border-b border-blue-500/10 hover:bg-blue-500/10">
+                <td className="py-4 px-4 font-semibold text-blue-300">Token Budget Control</td>
                 <td className="text-center py-4 px-4">✓ Hard limit</td>
                 <td className="text-center py-4 px-4">✗</td>
                 <td className="text-center py-4 px-4">✗</td>
               </tr>
-              <tr className="border-b border-gray-200 hover:bg-gray-50">
-                <td className="py-4 px-4 font-semibold text-gray-900">Timeout Enforcement</td>
+              <tr className="border-b border-blue-500/10 hover:bg-blue-500/10">
+                <td className="py-4 px-4 font-semibold text-blue-300">Timeout Enforcement</td>
                 <td className="text-center py-4 px-4">✓ Per-agent</td>
                 <td className="text-center py-4 px-4">✓ Limited</td>
                 <td className="text-center py-4 px-4">✓ Limited</td>
               </tr>
-              <tr className="border-b border-gray-200 hover:bg-gray-50">
-                <td className="py-4 px-4 font-semibold text-gray-900">Persistent Memory</td>
+              <tr className="border-b border-blue-500/10 hover:bg-blue-500/10">
+                <td className="py-4 px-4 font-semibold text-blue-300">Persistent Memory</td>
                 <td className="text-center py-4 px-4">✓ MeMex RAG + Git</td>
                 <td className="text-center py-4 px-4">✓ Basic</td>
                 <td className="text-center py-4 px-4">✗</td>
               </tr>
-              <tr className="border-b border-gray-200 hover:bg-gray-50">
-                <td className="py-4 px-4 font-semibold text-gray-900">Memory Search</td>
+              <tr className="border-b border-blue-500/10 hover:bg-blue-500/10">
+                <td className="py-4 px-4 font-semibold text-blue-300">Memory Search</td>
                 <td className="text-center py-4 px-4">✓ Full-text + semantic</td>
                 <td className="text-center py-4 px-4">✓ Full-text</td>
                 <td className="text-center py-4 px-4">✗</td>
               </tr>
-              <tr className="border-b border-gray-200 hover:bg-gray-50">
-                <td className="py-4 px-4 font-semibold text-gray-900">Message Bus</td>
+              <tr className="border-b border-blue-500/10 hover:bg-blue-500/10">
+                <td className="py-4 px-4 font-semibold text-blue-300">Message Bus</td>
                 <td className="text-center py-4 px-4">✓ CSP-based</td>
                 <td className="text-center py-4 px-4">✓ Basic</td>
                 <td className="text-center py-4 px-4">✗</td>
               </tr>
-              <tr className="border-b border-gray-200 hover:bg-gray-50">
-                <td className="py-4 px-4 font-semibold text-gray-900">Pipeline Orchestration</td>
+              <tr className="border-b border-blue-500/10 hover:bg-blue-500/10">
+                <td className="py-4 px-4 font-semibold text-blue-300">Pipeline Orchestration</td>
                 <td className="text-center py-4 px-4">✓ DAG + parallel</td>
                 <td className="text-center py-4 px-4">✓ Sequential</td>
                 <td className="text-center py-4 px-4">✗</td>
               </tr>
-              <tr className="border-b border-gray-200 hover:bg-gray-50">
-                <td className="py-4 px-4 font-semibold text-gray-900">Cost Tracking</td>
+              <tr className="border-b border-blue-500/10 hover:bg-blue-500/10">
+                <td className="py-4 px-4 font-semibold text-blue-300">Cost Tracking</td>
                 <td className="text-center py-4 px-4">✓ Per-agent real-time</td>
                 <td className="text-center py-4 px-4">✗</td>
                 <td className="text-center py-4 px-4">✗</td>
               </tr>
-              <tr className="border-b border-gray-200 hover:bg-gray-50">
-                <td className="py-4 px-4 font-semibold text-gray-900">Audit Trail</td>
+              <tr className="border-b border-blue-500/10 hover:bg-blue-500/10">
+                <td className="py-4 px-4 font-semibold text-blue-300">Audit Trail</td>
                 <td className="text-center py-4 px-4">✓ Complete</td>
                 <td className="text-center py-4 px-4">✗</td>
                 <td className="text-center py-4 px-4">✗</td>
               </tr>
-              <tr className="border-b border-gray-200 hover:bg-gray-50">
-                <td className="py-4 px-4 font-semibold text-gray-900">Built-in Tools</td>
+              <tr className="border-b border-blue-500/10 hover:bg-blue-500/10">
+                <td className="py-4 px-4 font-semibold text-blue-300">Built-in Tools</td>
                 <td className="text-center py-4 px-4">19 (comprehensive)</td>
                 <td className="text-center py-4 px-4">12 (basic)</td>
                 <td className="text-center py-4 px-4">8 (minimal)</td>
               </tr>
-              <tr className="border-b border-gray-200 hover:bg-gray-50">
-                <td className="py-4 px-4 font-semibold text-gray-900">Dashboard/UI</td>
+              <tr className="border-b border-blue-500/10 hover:bg-blue-500/10">
+                <td className="py-4 px-4 font-semibold text-blue-300">Dashboard/UI</td>
                 <td className="text-center py-4 px-4">✓ Modern React</td>
                 <td className="text-center py-4 px-4">✓ Basic</td>
                 <td className="text-center py-4 px-4">✗ CLI only</td>
               </tr>
-              <tr className="border-b border-gray-200 hover:bg-gray-50">
-                <td className="py-4 px-4 font-semibold text-gray-900">Single Binary</td>
+              <tr className="border-b border-blue-500/10 hover:bg-blue-500/10">
+                <td className="py-4 px-4 font-semibold text-blue-300">Single Binary</td>
                 <td className="text-center py-4 px-4">✓ 10MB</td>
                 <td className="text-center py-4 px-4">✗ 150MB+</td>
                 <td className="text-center py-4 px-4">✗ 200MB+</td>
               </tr>
-              <tr className="border-b border-gray-200 hover:bg-gray-50">
-                <td className="py-4 px-4 font-semibold text-gray-900">Startup Time</td>
+              <tr className="border-b border-blue-500/10 hover:bg-blue-500/10">
+                <td className="py-4 px-4 font-semibold text-blue-300">Startup Time</td>
                 <td className="text-center py-4 px-4">✓ &lt;100ms</td>
                 <td className="text-center py-4 px-4">~500ms</td>
                 <td className="text-center py-4 px-4">~1000ms</td>
               </tr>
-              <tr className="border-b border-gray-200 hover:bg-gray-50">
-                <td className="py-4 px-4 font-semibold text-gray-900">Memory Footprint</td>
+              <tr className="border-b border-blue-500/10 hover:bg-blue-500/10">
+                <td className="py-4 px-4 font-semibold text-blue-300">Memory Footprint</td>
                 <td className="text-center py-4 px-4">✓ 50-100MB</td>
                 <td className="text-center py-4 px-4">~400MB</td>
                 <td className="text-center py-4 px-4">~600MB</td>
               </tr>
-              <tr className="border-b border-gray-200 hover:bg-gray-50">
-                <td className="py-4 px-4 font-semibold text-gray-900">Language</td>
+              <tr className="border-b border-blue-500/10 hover:bg-blue-500/10">
+                <td className="py-4 px-4 font-semibold text-blue-300">Language</td>
                 <td className="text-center py-4 px-4">Go (concurrent)</td>
                 <td className="text-center py-4 px-4">Python (GIL-bound)</td>
                 <td className="text-center py-4 px-4">Node.js</td>
               </tr>
-              <tr>
-                <td className="py-4 px-4 font-semibold text-gray-900">Open Source</td>
-                <td className="text-center py-4 px-4">✓ Apache 2.0</td>
-                <td className="text-center py-4 px-4">✗ Proprietary</td>
-                <td className="text-center py-4 px-4">✓ MIT</td>
+              <tr className="hover:bg-blue-500/10">
+                <td className="py-4 px-4 font-semibold text-blue-300">Open Source</td>
+                <td className="text-center py-4 px-4 text-gray-300">✓ Apache 2.0</td>
+                <td className="text-center py-4 px-4 text-gray-300">✗ Proprietary</td>
+                <td className="text-center py-4 px-4 text-gray-300">✓ MIT</td>
               </tr>
             </tbody>
           </table>
