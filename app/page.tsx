@@ -1,4 +1,5 @@
 import { ArrowRight, Shield, Zap, Database, GitBranch, Lock, Code, Cpu, Layers } from 'lucide-react'
+import Image from 'next/image'
 
 export const metadata = {
   title: 'AgentForge - Zero-Trust Agent Orchestration',
@@ -9,9 +10,10 @@ export default function HomePage() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="py-32 md:py-40">
+      <section className="py-20 md:py-32">
         <div className="container">
-          <div className="max-w-3xl mx-auto text-center">
+          <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
+            <div className="text-center md:text-left">
             <div className="mb-6 inline-flex items-center gap-2 glassmorphism px-4 py-2 rounded-full text-sm text-blue-300 border border-blue-500/30">
               <Zap size={16} />
               Capability-Secured Agent Orchestration
@@ -31,6 +33,17 @@ export default function HomePage() {
               <a href="https://github.com/agentforge/agentforge" className="glassmorphism text-blue-300 px-8 py-3 rounded-lg font-bold hover:text-blue-100 border border-blue-500/30 hover:border-blue-500/50 transition">
                 View on GitHub
               </a>
+            </div>
+            <div className="flex justify-center">
+              <Image
+                src="/images/illustrations/hero-dashboard.png"
+                alt="AgentForge Hero Illustration"
+                width={450}
+                height={450}
+                priority
+                className="drop-shadow-2xl"
+              />
+            </div>
             </div>
 
             {/* Stats */}
