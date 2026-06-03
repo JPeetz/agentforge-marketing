@@ -12,57 +12,61 @@ export default function HomePage() {
       {/* Hero Section */}
       <section className="py-20 md:py-32">
         <div className="container">
-          <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
+          <div className="grid md:grid-cols-2 gap-12 items-start mb-16">
             <div className="text-center md:text-left">
-            <div className="mb-6 inline-flex items-center gap-2 glassmorphism px-4 py-2 rounded-full text-sm text-blue-300 border border-blue-500/30">
-              <Zap size={16} />
-              Capability-Secured Agent Orchestration
-            </div>
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 gradient-text leading-tight">
-              Agents that work.
-              <br />
-              Security you trust.
-            </h1>
-            <p className="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed">
-              Deploy autonomous LLM agents with <span className="text-blue-300 font-semibold">zero-trust, capability-based security</span>. Fine-grained ACLs, cryptographically signed tokens, persistent memory with Git, and 1000s of concurrent agents—all in a 10MB binary.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
-              <a href="/contact" className="group glassmorphism bg-gradient-to-r from-blue-600/80 to-purple-600/80 text-white px-8 py-3 rounded-lg font-bold hover:from-blue-600 hover:to-purple-600 border border-blue-400/50 flex items-center justify-center gap-2 transition">
-                Get Started <ArrowRight size={20} className="group-hover:translate-x-1 transition" />
-              </a>
-              <a href="https://github.com/JPeetz/agentforge" className="glassmorphism text-blue-300 px-8 py-3 rounded-lg font-bold hover:text-blue-100 border border-blue-500/30 hover:border-blue-500/50 transition">
-                View on GitHub
-              </a>
-            </div>
-            <div className="flex justify-center">
-              <Image
-                src="/images/illustrations/hero-dashboard.png"
-                alt="AgentForge Hero Illustration"
-                width={450}
-                height={450}
-                priority
-                className="drop-shadow-2xl"
-              />
-            </div>
+              <div className="mb-6 inline-flex items-center gap-2 glassmorphism px-4 py-2 rounded-full text-sm text-blue-300 border border-blue-500/30">
+                <Zap size={16} />
+                Capability-Secured Agent Orchestration
+              </div>
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 gradient-text leading-tight">
+                Agents that work.
+                <br />
+                Security you trust.
+              </h1>
+              <p className="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed">
+                Deploy autonomous LLM agents with <span className="text-blue-300 font-semibold">zero-trust, capability-based security</span>. Fine-grained ACLs, cryptographically signed tokens, persistent memory with Git, and 1000s of concurrent agents—all in a 10MB binary.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                <a href="/contact" className="group glassmorphism bg-gradient-to-r from-blue-600/80 to-purple-600/80 text-white px-8 py-3 rounded-lg font-bold hover:from-blue-600 hover:to-purple-600 border border-blue-400/50 flex items-center justify-center gap-2 transition">
+                  Get Started <ArrowRight size={20} className="group-hover:translate-x-1 transition" />
+                </a>
+                <a href="https://github.com/JPeetz/agentforge" className="glassmorphism text-blue-300 px-8 py-3 rounded-lg font-bold hover:text-blue-100 border border-blue-500/30 hover:border-blue-500/50 transition">
+                  View on GitHub
+                </a>
+              </div>
             </div>
 
-            {/* Stats */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-12">
-              <div className="glassmorphism p-6 rounded-lg border border-blue-500/20">
-                <div className="text-3xl md:text-4xl font-bold gradient-text">10MB</div>
-                <div className="text-gray-400 text-sm mt-2">Single Binary</div>
+            {/* Right Column - Image and Stats */}
+            <div className="flex flex-col gap-8">
+              <div className="flex justify-center">
+                <Image
+                  src="/images/illustrations/hero-dashboard.png"
+                  alt="AgentForge Hero Illustration"
+                  width={400}
+                  height={400}
+                  priority
+                  className="drop-shadow-2xl"
+                />
               </div>
-              <div className="glassmorphism p-6 rounded-lg border border-blue-500/20">
-                <div className="text-3xl md:text-4xl font-bold gradient-text">1000s</div>
-                <div className="text-gray-400 text-sm mt-2">Concurrent Agents</div>
-              </div>
-              <div className="glassmorphism p-6 rounded-lg border border-blue-500/20">
-                <div className="text-3xl md:text-4xl font-bold gradient-text">19</div>
-                <div className="text-gray-400 text-sm mt-2">Built-in Tools</div>
-              </div>
-              <div className="glassmorphism p-6 rounded-lg border border-blue-500/20">
-                <div className="text-3xl md:text-4xl font-bold gradient-text">0</div>
-                <div className="text-gray-400 text-sm mt-2">Trust Required</div>
+
+              {/* Stats */}
+              <div className="grid grid-cols-2 gap-4">
+                <div className="glassmorphism p-6 rounded-lg border border-blue-500/20 text-center">
+                  <div className="text-3xl md:text-4xl font-bold gradient-text">10MB</div>
+                  <div className="text-gray-400 text-sm mt-2">Single Binary</div>
+                </div>
+                <div className="glassmorphism p-6 rounded-lg border border-blue-500/20 text-center">
+                  <div className="text-3xl md:text-4xl font-bold gradient-text">1000s</div>
+                  <div className="text-gray-400 text-sm mt-2">Concurrent Agents</div>
+                </div>
+                <div className="glassmorphism p-6 rounded-lg border border-blue-500/20 text-center">
+                  <div className="text-3xl md:text-4xl font-bold gradient-text">19</div>
+                  <div className="text-gray-400 text-sm mt-2">Built-in Tools</div>
+                </div>
+                <div className="glassmorphism p-6 rounded-lg border border-blue-500/20 text-center">
+                  <div className="text-3xl md:text-4xl font-bold gradient-text">0</div>
+                  <div className="text-gray-400 text-sm mt-2">Trust Required</div>
+                </div>
               </div>
             </div>
           </div>
