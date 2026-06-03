@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 export const metadata = {
   title: 'Security - AgentForge',
   description: 'AgentForge security model: capability-based zero-trust, ACLs, token budgets, audit trails, and more.',
@@ -8,6 +10,15 @@ export default function SecurityPage() {
     <div>
       <section className="py-20">
         <div className="container text-center max-w-3xl">
+          <div className="mb-6 flex justify-center">
+            <Image
+              src="/images/icons/nav-security.png"
+              alt="Security"
+              width={80}
+              height={80}
+              className="opacity-90"
+            />
+          </div>
           <h1 className="text-5xl md:text-6xl font-bold mb-6 gradient-text">Security by Design</h1>
           <p className="text-lg text-gray-300">
             Capability-based zero-trust security. Trust nothing, verify everything.

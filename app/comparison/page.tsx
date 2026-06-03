@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 export const metadata = {
   title: 'Comparison - AgentForge vs OpenClaw vs Hermes',
   description: 'Feature-by-feature comparison: AgentForge vs OpenClaw vs Hermes agent orchestration platforms.',
@@ -8,6 +10,15 @@ export default function ComparisonPage() {
     <div>
       <section className="py-20 border-b border-blue-500/10">
         <div className="container text-center">
+          <div className="mb-6 flex justify-center">
+            <Image
+              src="/images/icons/nav-security.png"
+              alt="Security Comparison"
+              width={80}
+              height={80}
+              className="opacity-90"
+            />
+          </div>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 gradient-text">How AgentForge Compares</h1>
           <p className="text-lg text-gray-300 max-w-2xl mx-auto">
             Built for security and scale, from the ground up.

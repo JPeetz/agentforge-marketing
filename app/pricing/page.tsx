@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 export const metadata = {
   title: 'Pricing - AgentForge',
   description: 'AgentForge pricing: Open source, self-hosted, with optional managed service and enterprise support.',
@@ -8,6 +10,15 @@ export default function PricingPage() {
     <div>
       <section className="py-20">
         <div className="container text-center max-w-3xl">
+          <div className="mb-6 flex justify-center">
+            <Image
+              src="/images/icons/agent-deploy.png"
+              alt="Agent Deployment"
+              width={80}
+              height={80}
+              className="opacity-90"
+            />
+          </div>
           <h1 className="text-5xl md:text-6xl font-bold mb-6 gradient-text">Transparent Pricing</h1>
           <p className="text-lg text-gray-300">
             Open source. Self-hosted. Pay only for what you use.

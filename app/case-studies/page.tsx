@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 export const metadata = {
   title: 'Case Studies - AgentForge',
   description: 'How companies use AgentForge to deploy autonomous agents securely at scale.',
@@ -8,6 +10,22 @@ export default function CaseStudiesPage() {
     <div>
       <section className="py-20 py-20">
         <div className="container text-center">
+          <div className="mb-6 flex justify-center gap-6">
+            <Image
+              src="/images/icons/card-agents.png"
+              alt="Agents"
+              width={80}
+              height={80}
+              className="opacity-90"
+            />
+            <Image
+              src="/images/icons/health-icon.png"
+              alt="Health"
+              width={80}
+              height={80}
+              className="opacity-90"
+            />
+          </div>
           <h1 className="text-5xl md:text-6xl font-bold mb-6 gradient-text">Case Studies</h1>
           <p className="text-lg text-gray-300 max-w-2xl mx-auto">
             How organizations use AgentForge to automate workflows securely.
