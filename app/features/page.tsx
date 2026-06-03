@@ -1,3 +1,5 @@
+import { Shield, Lock, Zap, Database, GitBranch, Code, Layers, Eye, Gauge } from 'lucide-react'
+
 export const metadata = {
   title: 'Features - AgentForge',
   description: 'AgentForge features: capability-based security, persistent memory, message bus, 19 built-in tools, and more.',
@@ -7,6 +9,7 @@ export default function FeaturesPage() {
   const features = [
     {
       category: 'Security',
+      icon: Shield,
       items: [
         { title: 'Capability Tokens', description: 'HMAC-signed tokens specify exactly what each agent can access: files, domains, token budget, timeout.' },
         { title: 'Filesystem ACLs', description: 'Glob patterns restrict file access. Agents cannot escape their allowed directories.' },
@@ -18,6 +21,7 @@ export default function FeaturesPage() {
     },
     {
       category: 'Capabilities',
+      icon: Zap,
       items: [
         { title: 'File I/O', description: 'Read, write, delete, list files—all ACL-protected. Handle JSON, markdown, text, code.' },
         { title: 'Web Access', description: 'HTTP requests and Google Search integration. Domain-whitelist protected.' },
@@ -29,6 +33,7 @@ export default function FeaturesPage() {
     },
     {
       category: 'Operations',
+      icon: Gauge,
       items: [
         { title: 'Inter-Agent Communication', description: 'CSP message bus with topic subscriptions. Agents coordinate without central broker.' },
         { title: 'Pipeline Orchestration', description: 'DAG-based pipelines. Stages run in parallel or sequentially. Full dependency management.' },
@@ -42,38 +47,44 @@ export default function FeaturesPage() {
 
   return (
     <div>
-      <section className="py-20 bg-gradient-to-b from-blue-50 to-white">
-        <div className="container text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">AgentForge Features</h1>
-          <p className="text-lg text-gray-700 max-w-2xl mx-auto">
+      <section className="py-20">
+        <div className="container text-center max-w-3xl">
+          <h1 className="text-5xl md:text-6xl font-bold mb-6 gradient-text">Features</h1>
+          <p className="text-lg text-gray-300">
             Everything you need to deploy autonomous agents securely at scale.
           </p>
         </div>
       </section>
 
-      {features.map((section, idx) => (
-        <section key={idx} className={idx % 2 === 0 ? 'bg-white' : 'bg-gray-50'} style={{ padding: '5rem 0' }}>
-          <div className="container">
-            <h2 className="text-3xl font-bold mb-12">{section.category}</h2>
-            <div className="grid md:grid-cols-2 gap-8">
-              {section.items.map((item, i) => (
-                <div key={i} className="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
-                  <h3 className="text-xl font-bold mb-2 text-brand">{item.title}</h3>
-                  <p className="text-gray-700">{item.description}</p>
-                </div>
-              ))}
+      {features.map((section, idx) => {
+        const Icon = section.icon
+        return (
+          <section key={idx} className="py-20 border-t border-blue-500/10">
+            <div className="container">
+              <div className="flex items-center gap-3 mb-12">
+                <Icon className="text-blue-400" size={32} />
+                <h2 className="text-3xl md:text-4xl font-bold gradient-text">{section.category}</h2>
+              </div>
+              <div className="grid md:grid-cols-2 gap-6">
+                {section.items.map((item, i) => (
+                  <div key={i} className="glassmorphism p-6 rounded-lg border border-blue-500/20 hover:border-blue-500/40 transition">
+                    <h3 className="text-lg font-bold text-blue-300 mb-2">{item.title}</h3>
+                    <p className="text-sm text-gray-400">{item.description}</p>
+                  </div>
+                ))}
+              </div>
             </div>
-          </div>
-        </section>
-      ))}
+          </section>
+        )
+      })}
 
-      <section className="py-20 bg-gradient-to-r from-brand to-blue-700 text-white">
+      <section className="py-20 border-t border-blue-500/10">
         <div className="container text-center">
-          <h2 className="text-3xl font-bold mb-6">Get Started Today</h2>
-          <p className="text-lg mb-8 max-w-2xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Get Started?</h2>
+          <p className="text-lg text-gray-300 mb-8 max-w-2xl mx-auto">
             Read the docs, try the open-source version, or contact us for enterprise support.
           </p>
-          <a href="/docs" className="bg-white text-brand px-8 py-3 rounded-lg font-bold hover:bg-gray-100 inline-block">
+          <a href="/docs" className="glassmorphism bg-gradient-to-r from-blue-600/80 to-purple-600/80 text-white px-8 py-3 rounded-lg font-bold hover:from-blue-600 hover:to-purple-600 border border-blue-400/50 inline-block transition">
             View Documentation
           </a>
         </div>

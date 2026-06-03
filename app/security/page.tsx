@@ -6,32 +6,34 @@ export const metadata = {
 export default function SecurityPage() {
   return (
     <div>
-      <section className="py-20 bg-gradient-to-b from-blue-50 to-white">
-        <div className="container text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">Security by Design</h1>
-          <p className="text-lg text-gray-700 max-w-2xl mx-auto">
+      <section className="py-20">
+        <div className="container text-center max-w-3xl">
+          <h1 className="text-5xl md:text-6xl font-bold mb-6 gradient-text">Security by Design</h1>
+          <p className="text-lg text-gray-300">
             Capability-based zero-trust security. Trust nothing, verify everything.
           </p>
         </div>
       </section>
 
-      <section className="py-20 bg-white">
+      <section className="py-20 border-t border-blue-500/10">
         <div className="container">
-          <h2 className="text-3xl font-bold mb-12">The AgentForge Security Model</h2>
-          <div className="prose prose-lg max-w-none">
-            <h3>Zero-Trust Principles</h3>
-            <p>
-              AgentForge implements capability-based security, not trust-based security. Every agent starts with zero permissions. You explicitly grant only what it needs.
-            </p>
-            <p>
-              Each agent receives an HMAC-signed <strong>capability token</strong> that specifies:
-            </p>
-            <ul>
-              <li><strong>Filesystem Paths:</strong> Which directories the agent can read/write (glob patterns)</li>
-              <li><strong>Network Domains:</strong> Which external APIs the agent can call</li>
-              <li><strong>Token Budget:</strong> Maximum tokens the agent can consume</li>
-              <li><strong>Timeout:</strong> Maximum execution time</li>
-            </ul>
+          <h2 className="text-3xl md:text-4xl font-bold mb-12">Zero-Trust Architecture</h2>
+          <div className="max-w-3xl mx-auto space-y-8 text-gray-300">
+            <div>
+              <h3 className="text-2xl font-bold text-blue-300 mb-4">Zero-Trust Principles</h3>
+              <p className="mb-4">
+                AgentForge implements capability-based security, not trust-based security. Every agent starts with zero permissions. You explicitly grant only what it needs.
+              </p>
+              <p className="mb-4">
+                Each agent receives an HMAC-signed <span className="text-blue-300 font-semibold">capability token</span> that specifies:
+              </p>
+              <ul className="space-y-2 ml-4 list-disc">
+                <li><span className="text-blue-300 font-semibold">Filesystem Paths:</span> Which directories the agent can read/write (glob patterns)</li>
+                <li><span className="text-blue-300 font-semibold">Network Domains:</span> Which external APIs the agent can call</li>
+                <li><span className="text-blue-300 font-semibold">Token Budget:</span> Maximum tokens the agent can consume</li>
+                <li><span className="text-blue-300 font-semibold">Timeout:</span> Maximum execution time</li>
+              </ul>
+            </div>
 
             <h3>How Capability Enforcement Works</h3>
             <p>

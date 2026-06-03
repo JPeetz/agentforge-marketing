@@ -6,63 +6,63 @@ export const metadata = {
 export default function PricingPage() {
   return (
     <div>
-      <section className="py-20 bg-gradient-to-b from-blue-50 to-white">
-        <div className="container text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">Simple, Transparent Pricing</h1>
-          <p className="text-lg text-gray-700 max-w-2xl mx-auto">
+      <section className="py-20">
+        <div className="container text-center max-w-3xl">
+          <h1 className="text-5xl md:text-6xl font-bold mb-6 gradient-text">Transparent Pricing</h1>
+          <p className="text-lg text-gray-300">
             Open source. Self-hosted. Pay only for what you use.
           </p>
         </div>
       </section>
 
-      <section className="py-20 bg-white">
+      <section className="py-20 border-t border-blue-500/10">
         <div className="container">
-          <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-            <div className="border-2 border-gray-200 rounded-lg p-8 text-center">
-              <h3 className="text-2xl font-bold mb-4">Community</h3>
-              <div className="text-4xl font-bold text-brand mb-6">$0</div>
-              <p className="text-gray-600 mb-6">Forever free open source</p>
-              <ul className="text-left space-y-3 mb-8 text-gray-700">
-                <li>✓ Full AgentForge binary</li>
-                <li>✓ 19 built-in tools</li>
-                <li>✓ Capability-based security</li>
-                <li>✓ Memory with Git</li>
-                <li>✓ Self-hosted</li>
+          <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+            <div className="glassmorphism border-2 border-blue-500/20 rounded-lg p-8 text-center">
+              <h3 className="text-2xl font-bold mb-4 text-blue-300">Community</h3>
+              <div className="text-5xl font-bold gradient-text mb-6">$0</div>
+              <p className="text-gray-400 mb-6">Forever free open source</p>
+              <ul className="text-left space-y-3 mb-8 text-gray-300 text-sm">
+                <li className="flex gap-2"><span className="text-green-400">✓</span> Full AgentForge binary</li>
+                <li className="flex gap-2"><span className="text-green-400">✓</span> 19 built-in tools</li>
+                <li className="flex gap-2"><span className="text-green-400">✓</span> Capability-based security</li>
+                <li className="flex gap-2"><span className="text-green-400">✓</span> Memory with Git</li>
+                <li className="flex gap-2"><span className="text-green-400">✓</span> Self-hosted</li>
               </ul>
-              <a href="https://github.com/agentforge/agentforge" className="bg-gray-200 text-gray-900 px-6 py-2 rounded font-bold hover:bg-gray-300 block">
+              <a href="https://github.com/agentforge/agentforge" className="glassmorphism text-blue-300 px-6 py-2 rounded font-bold hover:text-blue-100 border border-blue-500/30 block transition">
                 Get Started
               </a>
             </div>
 
-            <div className="border-2 border-brand rounded-lg p-8 text-center shadow-xl">
-              <div className="bg-brand text-white px-3 py-1 rounded-full text-sm font-bold inline-block mb-4">Popular</div>
-              <h3 className="text-2xl font-bold mb-4">Managed</h3>
-              <div className="text-4xl font-bold text-brand mb-2">$299</div>
-              <p className="text-gray-600 mb-6">/month for 50K agents</p>
-              <ul className="text-left space-y-3 mb-8 text-gray-700">
-                <li>✓ Everything in Community</li>
-                <li>✓ Hosted infrastructure</li>
-                <li>✓ 99.9% uptime SLA</li>
-                <li>✓ Daily backups</li>
-                <li>✓ Email support</li>
+            <div className="glassmorphism border-2 border-purple-500/40 rounded-lg p-8 text-center bg-purple-500/10">
+              <div className="bg-gradient-to-r from-blue-500 to-purple-600 text-white px-3 py-1 rounded-full text-sm font-bold inline-block mb-4">Popular</div>
+              <h3 className="text-2xl font-bold mb-4 text-blue-300">Managed</h3>
+              <div className="text-5xl font-bold gradient-text mb-2">$299</div>
+              <p className="text-gray-400 mb-6">/month for 50K agents</p>
+              <ul className="text-left space-y-3 mb-8 text-gray-300 text-sm">
+                <li className="flex gap-2"><span className="text-green-400">✓</span> Everything in Community</li>
+                <li className="flex gap-2"><span className="text-green-400">✓</span> Hosted infrastructure</li>
+                <li className="flex gap-2"><span className="text-green-400">✓</span> 99.9% uptime SLA</li>
+                <li className="flex gap-2"><span className="text-green-400">✓</span> Daily backups</li>
+                <li className="flex gap-2"><span className="text-green-400">✓</span> Email support</li>
               </ul>
-              <a href="/contact" className="bg-brand text-white px-6 py-2 rounded font-bold hover:bg-blue-700 block">
+              <a href="/contact" className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-2 rounded font-bold hover:from-blue-700 hover:to-purple-700 block transition">
                 Start Free Trial
               </a>
             </div>
 
-            <div className="border-2 border-gray-200 rounded-lg p-8 text-center">
-              <h3 className="text-2xl font-bold mb-4">Enterprise</h3>
-              <div className="text-4xl font-bold text-brand mb-6">Custom</div>
-              <p className="text-gray-600 mb-6">Unlimited scale + support</p>
-              <ul className="text-left space-y-3 mb-8 text-gray-700">
-                <li>✓ Everything in Managed</li>
-                <li>✓ Unlimited agents</li>
-                <li>✓ SLA: 99.99%</li>
-                <li>✓ Dedicated support</li>
-                <li>✓ Custom integrations</li>
+            <div className="glassmorphism border-2 border-blue-500/20 rounded-lg p-8 text-center">
+              <h3 className="text-2xl font-bold mb-4 text-blue-300">Enterprise</h3>
+              <div className="text-5xl font-bold gradient-text mb-6">Custom</div>
+              <p className="text-gray-400 mb-6">Unlimited scale + support</p>
+              <ul className="text-left space-y-3 mb-8 text-gray-300 text-sm">
+                <li className="flex gap-2"><span className="text-green-400">✓</span> Everything in Managed</li>
+                <li className="flex gap-2"><span className="text-green-400">✓</span> Unlimited agents</li>
+                <li className="flex gap-2"><span className="text-green-400">✓</span> SLA: 99.99%</li>
+                <li className="flex gap-2"><span className="text-green-400">✓</span> Dedicated support</li>
+                <li className="flex gap-2"><span className="text-green-400">✓</span> Custom integrations</li>
               </ul>
-              <a href="/contact" className="bg-brand text-white px-6 py-2 rounded font-bold hover:bg-blue-700 block">
+              <a href="/contact" className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-2 rounded font-bold hover:from-blue-700 hover:to-purple-700 block transition">
                 Contact Sales
               </a>
             </div>
@@ -70,89 +70,81 @@ export default function PricingPage() {
         </div>
       </section>
 
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 border-t border-blue-500/10">
         <div className="container">
-          <h2 className="text-3xl font-bold mb-12 text-center">What You Pay For</h2>
-          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            <div className="bg-white p-8 rounded-lg border border-gray-200">
-              <h3 className="text-xl font-bold mb-4 text-brand">Agent Hours</h3>
-              <p className="text-gray-700 mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">What You Pay For</h2>
+          <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+            <div className="glassmorphism p-8 rounded-lg border border-blue-500/20">
+              <h3 className="text-lg font-bold mb-4 text-blue-300">Agent Hours</h3>
+              <p className="text-gray-400 mb-4 text-sm">
                 Pay only for compute time. $0.10 per agent-hour for hosted deployments.
               </p>
-              <div className="bg-gray-50 p-4 rounded font-mono text-sm">
-                10 agents × 1 hour = $1.00
-              </div>
+              <pre className="text-xs text-gray-300 bg-black/20 p-3 rounded">
+                <code>10 agents × 1 hour = $1.00</code>
+              </pre>
             </div>
-            <div className="bg-white p-8 rounded-lg border border-gray-200">
-              <h3 className="text-xl font-bold mb-4 text-brand">Storage</h3>
-              <p className="text-gray-700 mb-4">
+            <div className="glassmorphism p-8 rounded-lg border border-blue-500/20">
+              <h3 className="text-lg font-bold mb-4 text-blue-300">Storage</h3>
+              <p className="text-gray-400 mb-4 text-sm">
                 Memory storage included up to 100GB. $0.01/GB above that.
               </p>
-              <div className="bg-gray-50 p-4 rounded font-mono text-sm">
-                10GB included, 50GB extra = $0.50
-              </div>
+              <pre className="text-xs text-gray-300 bg-black/20 p-3 rounded">
+                <code>10GB included, 50GB extra = $0.50</code>
+              </pre>
             </div>
-            <div className="bg-white p-8 rounded-lg border border-gray-200">
-              <h3 className="text-xl font-bold mb-4 text-brand">LLM API Calls</h3>
-              <p className="text-gray-700 mb-4">
+            <div className="glassmorphism p-8 rounded-lg border border-blue-500/20">
+              <h3 className="text-lg font-bold mb-4 text-blue-300">LLM API Calls</h3>
+              <p className="text-gray-400 mb-4 text-sm">
                 Your LLM provider fees apply. AgentForge doesn't mark them up.
               </p>
-              <div className="bg-gray-50 p-4 rounded font-mono text-sm">
-                Pay OpenAI directly (no AgentForge fee)
-              </div>
+              <pre className="text-xs text-gray-300 bg-black/20 p-3 rounded">
+                <code>Pay OpenAI directly (no fee)</code>
+              </pre>
             </div>
-            <div className="bg-white p-8 rounded-lg border border-gray-200">
-              <h3 className="text-xl font-bold mb-4 text-brand">Support</h3>
-              <p className="text-gray-700 mb-4">
+            <div className="glassmorphism p-8 rounded-lg border border-blue-500/20">
+              <h3 className="text-lg font-bold mb-4 text-blue-300">Support</h3>
+              <p className="text-gray-400 mb-4 text-sm">
                 Email support included. Optional phone/dedicated support available.
               </p>
-              <div className="bg-gray-50 p-4 rounded font-mono text-sm">
-                Email: Included, Phone: $999/month
-              </div>
+              <pre className="text-xs text-gray-300 bg-black/20 p-3 rounded">
+                <code>Email: Free, Phone: $999/mo</code>
+              </pre>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="py-20 bg-white">
+      <section className="py-20 border-t border-blue-500/10">
         <div className="container">
-          <h2 className="text-3xl font-bold mb-12 text-center">FAQ</h2>
-          <div className="max-w-3xl mx-auto space-y-8">
-            <div>
-              <h3 className="text-xl font-bold mb-2">Can I use AgentForge for free?</h3>
-              <p className="text-gray-700">Yes. The open source version is completely free. Self-host it on your own infrastructure.</p>
-            </div>
-            <div>
-              <h3 className="text-xl font-bold mb-2">What's included in the free version?</h3>
-              <p className="text-gray-700">Everything: all 19 tools, security, memory, pipelines, dashboard. The only limitation is you manage the infrastructure.</p>
-            </div>
-            <div>
-              <h3 className="text-xl font-bold mb-2">Do you charge per agent?</h3>
-              <p className="text-gray-700">No. Managed service pricing is based on agent-hours and storage, not per-agent licenses.</p>
-            </div>
-            <div>
-              <h3 className="text-xl font-bold mb-2">Can I switch from self-hosted to managed?</h3>
-              <p className="text-gray-700">Yes. Your agents and memory are portable. Migration is straightforward.</p>
-            </div>
-            <div>
-              <h3 className="text-xl font-bold mb-2">What about LLM provider costs?</h3>
-              <p className="text-gray-700">You pay your LLM provider directly. AgentForge doesn't mark up or resell compute. We only charge for our infrastructure and support.</p>
-            </div>
+          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">FAQ</h2>
+          <div className="max-w-3xl mx-auto space-y-6">
+            {[
+              { q: 'Can I use AgentForge for free?', a: 'Yes. The open source version is completely free. Self-host it on your own infrastructure.' },
+              { q: "What's included in the free version?", a: 'Everything: all 19 tools, security, memory, pipelines, dashboard. You just manage the infrastructure.' },
+              { q: 'Do you charge per agent?', a: 'No. Managed service pricing is based on agent-hours and storage, not per-agent licenses.' },
+              { q: 'Can I switch from self-hosted to managed?', a: 'Yes. Your agents and memory are portable. Migration is straightforward.' },
+              { q: 'What about LLM provider costs?', a: "You pay your LLM provider directly. AgentForge doesn't mark up compute. We only charge for infrastructure and support." },
+            ].map((faq, i) => (
+              <div key={i} className="glassmorphism p-6 rounded-lg border border-blue-500/20">
+                <h3 className="text-lg font-bold mb-2 text-blue-300">{faq.q}</h3>
+                <p className="text-gray-400 text-sm">{faq.a}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
-      <section className="py-20 bg-gradient-to-r from-brand to-blue-700 text-white">
+      <section className="py-20 border-t border-blue-500/10">
         <div className="container text-center">
-          <h2 className="text-3xl font-bold mb-6">Start Building Today</h2>
-          <p className="text-lg mb-8 max-w-2xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">Start Building Today</h2>
+          <p className="text-lg text-gray-300 mb-8 max-w-2xl mx-auto">
             Free open source. Managed service available. Enterprise support for large deployments.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="https://github.com/agentforge/agentforge" className="bg-white text-brand px-8 py-3 rounded-lg font-bold hover:bg-gray-100">
+            <a href="https://github.com/agentforge/agentforge" className="glassmorphism text-blue-300 px-8 py-3 rounded-lg font-bold hover:text-blue-100 border border-blue-500/30 transition">
               Download Free
             </a>
-            <a href="/contact" className="border-2 border-white text-white px-8 py-3 rounded-lg font-bold hover:bg-blue-800">
+            <a href="/contact" className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-3 rounded-lg font-bold hover:from-blue-700 hover:to-purple-700 transition">
               Try Managed
             </a>
           </div>

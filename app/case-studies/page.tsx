@@ -6,10 +6,10 @@ export const metadata = {
 export default function CaseStudiesPage() {
   return (
     <div>
-      <section className="py-20 bg-gradient-to-b from-blue-50 to-white">
+      <section className="py-20 py-20">
         <div className="container text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">Case Studies</h1>
-          <p className="text-lg text-gray-700 max-w-2xl mx-auto">
+          <h1 className="text-5xl md:text-6xl font-bold mb-6 gradient-text">Case Studies</h1>
+          <p className="text-lg text-gray-300 max-w-2xl mx-auto">
             How organizations use AgentForge to automate workflows securely.
           </p>
         </div>
