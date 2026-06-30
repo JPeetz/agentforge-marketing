@@ -111,7 +111,6 @@ export default function RootLayout({
                   <li><a href="https://github.com/JPeetz/MeMex-Zero-RAG" className="hover:text-blue-400">MeMex Zero RAG</a></li>
                   <li><a href="https://github.com/JPeetz/codeflow-agentforge" className="hover:text-blue-400">CodeFlow</a></li>
                   <li><a href="https://github.com/JPeetz/SEO-API" className="hover:text-blue-400">SEO + GEO API</a></li>
-                  <li><a href="https://github.com/JPeetz/raceintel" className="hover:text-blue-400">RaceIntel</a></li>
                 </ul>
               </div>
               <div>
