@@ -81,7 +81,7 @@ export default function RootLayout({
 
         <footer className="glassmorphism border-t border-blue-500/20 mt-20">
           <div className="container py-12">
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+            <div className="grid grid-cols-1 md:grid-cols-5 gap-8 mb-8">
               <div>
                 <h3 className="text-white font-bold mb-4">AgentForge</h3>
                 <p className="text-sm text-gray-400">Zero-trust agent orchestration built for security and scale.</p>
@@ -102,6 +102,16 @@ export default function RootLayout({
                   <li><a href="/blog" className="hover:text-blue-400">Blog</a></li>
                   <li><a href="https://github.com/JPeetz/agentforge" className="hover:text-blue-400">GitHub</a></li>
                   <li><a href="https://discord.gg/agentforge" className="hover:text-blue-400">Discord</a></li>
+                </ul>
+              </div>
+              <div>
+                <h4 className="text-blue-300 font-bold mb-4 text-sm">Ecosystem</h4>
+                <ul className="space-y-2 text-sm text-gray-400">
+                  <li><a href="https://github.com/JPeetz/agent-skills" className="hover:text-blue-400">Agent Skills</a></li>
+                  <li><a href="https://github.com/JPeetz/MeMex-Zero-RAG" className="hover:text-blue-400">MeMex Zero RAG</a></li>
+                  <li><a href="https://github.com/JPeetz/codeflow-agentforge" className="hover:text-blue-400">CodeFlow</a></li>
+                  <li><a href="https://github.com/JPeetz/SEO-API" className="hover:text-blue-400">SEO + GEO API</a></li>
+                  <li><a href="https://github.com/JPeetz/raceintel" className="hover:text-blue-400">RaceIntel</a></li>
                 </ul>
               </div>
               <div>
